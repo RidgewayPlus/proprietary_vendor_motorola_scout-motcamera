@@ -1,0 +1,719 @@
+//
+// Automatically generated file. DO NOT MODIFY
+//
+
+soong_namespace {
+    imports: [
+        "device/motorola/scout",
+        "hardware/mediatek",
+        "hardware/mediatek/libmtkperf_client",
+        "hardware/motorola",
+    ],
+}
+
+cc_prebuilt_library_shared {
+    name: "libdisp_dejitter",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libdisp_dejitter.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libgralloc_extra_sys",
+                "libnativewindow",
+                "libgralloctypes",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libenginepostproc.moto",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libenginepostproc.moto.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libnativewindow",
+                "libcamera_metadata",
+                "libcamera_client",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libged_kpi",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libged_kpi.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libged_sys",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libged_sys",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libged_sys.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libsync",
+                "libnativewindow",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgpud_sys",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libgpud_sys.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libutilscallstack",
+                "liblog",
+                "libui",
+                "libsync",
+                "libhardware",
+                "libnativewindow",
+                "libgralloc_extra_sys",
+                "libhidlbase",
+                "libgralloctypes",
+                "android.hardware.graphics.common-V7-ndk",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgralloc_extra_sys",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libgralloc_extra_sys.so",
+            ],
+            shared_libs: [
+                "libsf_cpupolicy",
+                "libged_sys",
+                "libhardware",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libion",
+                "libdmabufheap",
+                "libutilscallstack",
+                "android.hardware.graphics.common@1.2",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libjni_helper.motocameradesktop",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libjni_helper.motocameradesktop.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.bufferqueue@1.0",
+                "libcutils",
+                "liblog",
+                "libui",
+                "libgui",
+                "libutils",
+                "libandroid",
+                "libhidlbase",
+                "motorola.hardware.camera.desktop@1.0",
+                "motorola.hardware.camera.desktop@2.0",
+                "libbinder",
+                "libandroid_runtime",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmagtsync",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmagtsync.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbase",
+                "libutils",
+                "libcutils",
+                "libc",
+                "libbinder",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkperf_client.mtk",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmtkperf_client.mtk.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libperfctl",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libperfctl.so",
+            ],
+            shared_libs: [
+                "libc",
+                "libcutils",
+                "libgui",
+                "libui",
+                "libutils",
+                "libexpat",
+                "liblog",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpowerhalwrap_jni",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libpowerhalwrap_jni.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libhidlbase",
+                "vendor.mediatek.hardware.pq@2.3",
+                "libcutils",
+                "libnativehelper",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsf_cpupolicy",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libsf_cpupolicy.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libprocessgroup",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libstagefright_mbrain",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libstagefright_mbrain.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libcutils",
+                "libgui",
+                "liblog",
+                "libui",
+                "libutils",
+                "libbase",
+                "libstagefright_foundation",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "motorola.hardware.camera.desktop@1.0",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/motorola.hardware.camera.desktop@1.0.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.graphics.common@1.1",
+                "android.hardware.graphics.common@1.2",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "motorola.hardware.camera.desktop@2.0",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/motorola.hardware.camera.desktop@2.0.so",
+            ],
+            shared_libs: [
+                "motorola.hardware.camera.desktop@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.media@1.0",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.graphics.common@1.1",
+                "android.hardware.graphics.common@1.2",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mtkpower-V1-ndk_system",
+    stem: "vendor.mediatek.hardware.mtkpower-V1-ndk",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkpower-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.pq@2.0",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.mediatek.hardware.pq@2.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.pq@2.1",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.mediatek.hardware.pq@2.1.so",
+            ],
+            shared_libs: [
+                "vendor.mediatek.hardware.pq@2.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.pq@2.2",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.mediatek.hardware.pq@2.2.so",
+            ],
+            shared_libs: [
+                "vendor.mediatek.hardware.pq@2.0",
+                "vendor.mediatek.hardware.pq@2.1",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.pq@2.3",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.mediatek.hardware.pq@2.3.so",
+            ],
+            shared_libs: [
+                "vendor.mediatek.hardware.pq@2.0",
+                "vendor.mediatek.hardware.pq@2.1",
+                "vendor.mediatek.hardware.pq@2.2",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "MotoSignatureApp",
+    owner: "motorola",
+    apk: "proprietary/system/app/MotoSignatureApp/MotoSignatureApp.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+android_app_import {
+    name: "MotCamera5",
+    owner: "motorola",
+    apk: "proprietary/product/priv-app/MotCamera5/MotCamera5.apk",
+    overrides: [
+        "Aperture",
+        "Camera",
+        "Camera2",
+        "GoogleCameraGo",
+        "GCamGOPrebuilt",
+    ],
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "MotCameraDesktop",
+    owner: "motorola",
+    apk: "proprietary/system_ext/priv-app/MotCameraDesktop/MotCameraDesktop.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "MotorolaSettingsProvider",
+    owner: "motorola",
+    apk: "proprietary/system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "com.motorola.motosignature",
+    owner: "motorola",
+    jars: [
+        "proprietary/system/framework/com.motorola.motosignature.jar",
+    ],
+}
+
+dex_import {
+    name: "moto-core_services",
+    owner: "motorola",
+    jars: [
+        "proprietary/system/framework/moto-core_services.jar",
+    ],
+}
+
+dex_import {
+    name: "moto-settings",
+    owner: "motorola",
+    jars: [
+        "proprietary/system/framework/moto-settings.jar",
+    ],
+}
+
+dex_import {
+    name: "com.motorola.camera.extensions",
+    owner: "motorola",
+    jars: [
+        "proprietary/vendor/framework/com.motorola.camera.extensions.jar",
+    ],
+    soc_specific: true,
+}
+
+dex_import {
+    name: "com.motorola.hardware.camera.desktop",
+    owner: "motorola",
+    jars: [
+        "proprietary/system_ext/framework/com.motorola.hardware.camera.desktop.jar",
+    ],
+    system_ext_specific: true,
+}
+
+sh_binary {
+    name: "motsettings",
+    owner: "motorola",
+    src: "proprietary/system_ext/bin/motsettings",
+    filename: "motsettings",
+    system_ext_specific: true,
+}
